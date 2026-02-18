@@ -1,33 +1,23 @@
 const HeroSection = () => {
   return (
-    <section style={styles.hero}>
-      <h1>Reliable Internet & Smart Tech Solutions</h1>
-      <p>
-        We provide high-speed internet, advanced surveillance cameras,
-        and powerful software systems for businesses and homes.
+    <section className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white py-32 px-6 text-center relative overflow-hidden">
+      <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
+        Empowering Homes & Businesses with Smart Tech
+      </h1>
+
+      <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 mb-10 drop-shadow">
+        High-speed internet, AI-powered security cameras, and custom software solutions that keep your business secure and connected.
       </p>
 
-      <button style={styles.button}>Explore Products</button>
+      <button className="mt-4 px-10 py-4 bg-yellow-400 text-blue-900 font-semibold rounded-full shadow-lg hover:bg-yellow-300 transition duration-300">
+        Explore Products
+      </button>
+
+      {/* Background circles */}
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-yellow-400 opacity-20 rounded-full blur-3xl"></div>
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-400 opacity-20 rounded-full blur-3xl"></div>
     </section>
   );
-};
-
-const styles = {
-  hero: {
-    textAlign: "center" as const,
-    
-    padding: "30px 600px",
-    backgroundColor: "#890000",
-    color: "white"
-  },
-  button: {
-    marginTop: "20px",
-    padding: "12px 25px",
-    backgroundColor: "#3b82f6",
-    color: "white",
-    border: "none",
-    cursor: "pointer"
-  }
 };
 
 export default HeroSection;

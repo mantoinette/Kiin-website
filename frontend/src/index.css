@@ -2,20 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Styles */
 :root {
-  font-family: system-ui, sans-serif;
-  background-color: #000000; /* Sets default background to black */
-  color: white;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a; /* Dark background */
+  color: #f1f5f9; /* Light text */
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  /* Removed the 'display: flex' and 'place-items: center' that broke the layout */
+  background-color: #0f172a;
+  color: #f1f5f9;
 }
 
+/* Add top padding to account for fixed navbar */
+main {
+  padding-top: 80px;
+}
+
+/* Remove default list styling */
 ul {
-  list-style: none; /* This removes the dots/bullets you see in your KIIN screenshot */
+  list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
