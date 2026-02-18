@@ -1,4 +1,4 @@
-# 🚀 KIIN Innovation – Full Stack Corporate Website
+#  KIIN Innovation – Full Stack Corporate Website
 
 A modern, responsive full-stack web application built for **KIIN Innovation**, a technology company providing internet connectivity, smart security systems, access control, and business software solutions.
 
@@ -6,7 +6,7 @@ This project demonstrates full-stack development using **React + TypeScript (Fro
 
 ---
 
-## 🏢 Project Overview
+##  Project Overview
 
 The KIIN Innovation website is designed to:
 
@@ -17,7 +17,7 @@ The KIIN Innovation website is designed to:
 
 ---
 
-## 🧱 System Architecture
+##  System Architecture
 
 ```
 Frontend (React + TypeScript + Tailwind CSS)
