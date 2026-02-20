@@ -1,6 +1,7 @@
 const AboutPage = () => {
   return (
     <div className="bg-gray-950 text-gray-100 min-h-screen px-6 md:px-20 py-16">
+
       {/* Page Title */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">
@@ -31,7 +32,7 @@ const AboutPage = () => {
       </div>
 
       {/* Core Values */}
-      <div>
+      <div className="mb-16">
         <h2 className="text-3xl font-bold text-cyan-400 mb-8 text-center">
           Core Values
         </h2>
@@ -50,6 +51,25 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Location with Google Map */}
+      <div>
+        <h2 className="text-3xl font-bold text-cyan-400 mb-4 text-center">Our Location</h2>
+        <p className="text-center text-gray-300 mb-6">
+          Find us in Gisement, Sawa City, Kigali, Rwanda
+        </p>
+
+        <div className="flex justify-center">
+          <iframe
+            title="KIIN Innovation Location"
+            className="w-full h-96 rounded-2xl shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31675.71659700084!2d30.04177753065428!3d-1.949667164018638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dbef8f06759bd7%3A0xade53cb9ee3e2c44!2sKigali%20City%2C%20Rwanda!5e0!3m2!1sen!2s!4v1708400000000!5m2!1sen!2s"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
     </div>
   );
 };
