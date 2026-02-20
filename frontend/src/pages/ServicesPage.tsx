@@ -1,4 +1,6 @@
+// src/pages/ServicesPage.tsx
 import { FaWifi, FaCamera, FaNetworkWired, FaCode, FaUserGraduate } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import StatsSection from "../components/StatsSection";
 
 const ServicesPage = () => {
@@ -92,9 +94,12 @@ const ServicesPage = () => {
           Need support? Want to install Starlink or CCTV? Looking for software development?
           Contact us today and let’s build your solution.
         </p>
-        <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition">
+        <Link
+          to="/contact"
+          className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition transform hover:scale-105"
+        >
           Contact Us
-        </button>
+        </Link>
       </div>
 
     </div>

@@ -1,4 +1,4 @@
-// src/pages/ProjectsPage.tsx
+//src/pages/ProjectsPage.tsx
 import React from "react";
 
 interface Project {
