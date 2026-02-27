@@ -1,18 +1,34 @@
+import { useEffect, useState } from "react";
+
+const images = [
+  "/images/12.jpg",
+  "/images/13.jpg",
+  "/images/14.jpg",
+];
+
 const HeroSection = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000); // change every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
       
-      {/* Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="https://cdn.coverr.co/videos/coverr-technology-home-automation-1591/1080p.mp4"
-        autoPlay
-        loop
-        muted
+      {/* Background Image Slider */}
+      <img
+        src={images[current]}
+        alt="Hero background"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       {/* Hero Content */}
       <div className="relative z-20 px-6">
