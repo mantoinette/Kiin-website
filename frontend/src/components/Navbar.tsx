@@ -5,16 +5,16 @@ const Navbar = () => {
     <nav className="bg-[#0f172a] text-white px-10 py-5 flex justify-between items-center shadow-2xl sticky top-0 z-50">
       
       {/* Logo */}
-      <NavLink
-        to="/"
-        className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
-      >
-        KIIN Innovation
+      <NavLink to="/" className="flex items-center">
+        <img
+          src="/images/logo.png"
+          alt="KIIN Innovation Logo"
+          className="h-10 w-auto"
+        />
       </NavLink>
 
       {/* Navigation Links */}
       <div className="hidden md:flex space-x-6">
-        
         {["/", "/services", "/about", "/contact"].map((path, index) => {
           const labels = ["Home", "Services", "About", "Contact"];
           return (
@@ -33,7 +33,6 @@ const Navbar = () => {
             </NavLink>
           );
         })}
-
       </div>
     </nav>
   );

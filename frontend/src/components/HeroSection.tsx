@@ -49,7 +49,7 @@ const HeroSection = () => {
           <button className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-black transition">
             Learn More
           </button>
-        </div>
+        </div> 
       </div>
     </section>
   );
