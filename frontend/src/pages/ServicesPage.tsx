@@ -38,14 +38,14 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div className="bg-gray-950 text-gray-100">
+    <div className="bg-[#1C1C1C] text-white">
 
       {/* HERO SECTION */}
-      <div className="text-center py-20 px-6 bg-gradient-to-r from-gray-900 to-gray-800">
-        <h1 className="text-4xl md:text-6xl font-bold text-cyan-400 mb-6">
+      <div className="text-center py-20 px-6 bg-[#1C1C1C]">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Our Professional Services
         </h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-300">
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/80">
           We deliver reliable internet solutions, advanced security systems,
           professional software development, and real-world internship programs
           to empower individuals and businesses.
@@ -57,25 +57,25 @@ const ServicesPage = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-cyan-500 transition duration-300 transform hover:-translate-y-2 text-center"
+            className="bg-[#2A2A2A] p-8 rounded-2xl shadow-lg hover:shadow-white/50 transition duration-300 transform hover:-translate-y-2 text-center"
           >
-            <div className="text-cyan-400 text-4xl mb-4 flex justify-center">
+            <div className="text-white text-4xl mb-4 flex justify-center">
               {service.icon}
             </div>
-            <h2 className="text-2xl font-bold text-cyan-400 mb-4">
+            <h2 className="text-2xl font-bold mb-4">
               {service.title}
             </h2>
-            <p className="text-gray-300">{service.description}</p>
+            <p className="text-white/80">{service.description}</p>
           </div>
         ))}
       </div>
 
       {/* QUOTE SECTION */}
-      <div className="bg-gray-900 py-20 text-center px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">
+      <div className="py-20 text-center px-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Our Commitment
         </h2>
-        <p className="max-w-3xl mx-auto text-gray-300 text-lg italic">
+        <p className="max-w-3xl mx-auto text-lg italic text-white/80">
           "Technology is best when it connects people. We are committed to
           delivering secure, reliable, and innovative solutions that help
           our clients grow and succeed."
@@ -83,20 +83,20 @@ const ServicesPage = () => {
       </div>
 
       {/* STATISTICS SECTION */}
-      <StatsSection />
+      <StatsSection textColor="#E2B770" backgroundColor="#F2F2F3" />
 
       {/* CALL TO ACTION */}
-      <div className="py-20 text-center bg-gray-900 px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">
+      <div className="py-20 text-center px-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Have a Question?
         </h2>
-        <p className="text-gray-300 mb-8 text-lg">
+        <p className="mb-8 text-lg text-white/80">
           Need support? Want to install Starlink or CCTV? Looking for software development?
           Contact us today and let’s build your solution.
         </p>
         <Link
           to="/contact"
-          className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition transform hover:scale-105"
+          className="inline-block bg-[#E2B770] hover:bg-[#d4a859] text-[#1C1C1C] px-8 py-3 rounded-full text-lg font-semibold transition transform hover:scale-105"
         >
           Contact Us
         </Link>

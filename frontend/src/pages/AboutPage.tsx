@@ -1,13 +1,14 @@
+// src/pages/AboutPage.tsx
 const AboutPage = () => {
   return (
-    <div className="bg-gray-950 text-gray-100 min-h-screen px-6 md:px-20 py-16">
+    <div className="bg-black text-[#E2B770] min-h-screen px-6 md:px-20 py-16">
 
       {/* Page Title */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#E2B770]">
           About KIIN Innovation
         </h1>
-        <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto">
+        <p className="text-[#E2B770]/90 text-lg md:text-xl max-w-2xl mx-auto">
           We are a technology company delivering reliable internet, smart security systems, 
           and innovative software solutions to empower businesses and communities.
         </p>
@@ -15,16 +16,16 @@ const AboutPage = () => {
 
       {/* Mission & Vision Section */}
       <div className="grid md:grid-cols-2 gap-12 mb-16">
-        <div className="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-cyan-500 transition transform hover:-translate-y-1">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Our Mission</h2>
-          <p className="text-gray-300 text-lg">
+        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-[#E2B770]/50 transition transform hover:-translate-y-1">
+          <h2 className="text-2xl font-semibold mb-4 text-[#E2B770]">Our Mission</h2>
+          <p className="text-gray-700 text-lg">
             To connect and secure the world through technology, enabling smarter, safer, 
             and more efficient solutions for our clients.
           </p>
         </div>
-        <div className="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-cyan-500 transition transform hover:-translate-y-1">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Our Vision</h2>
-          <p className="text-gray-300 text-lg">
+        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-[#E2B770]/50 transition transform hover:-translate-y-1">
+          <h2 className="text-2xl font-semibold mb-4 text-[#E2B770]">Our Vision</h2>
+          <p className="text-gray-700 text-lg">
             To become a leading innovator in technology, making advanced digital solutions 
             accessible and impactful for everyone.
           </p>
@@ -33,29 +34,29 @@ const AboutPage = () => {
 
       {/* Core Values */}
       <div className="mb-16">
-        <h2 className="text-3xl font-bold text-cyan-400 mb-8 text-center">
+        <h2 className="text-3xl font-bold mb-8 text-center text-[#E2B770]">
           Core Values
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-cyan-500 transition transform hover:-translate-y-1 text-center">
-            <h3 className="text-xl font-semibold text-cyan-300 mb-2">Innovation</h3>
-            <p className="text-gray-300">We strive to create cutting-edge solutions that push the limits of technology.</p>
+          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-[#E2B770]/50 transition transform hover:-translate-y-1 text-center">
+            <h3 className="text-xl font-semibold mb-2 text-[#E2B770]">Innovation</h3>
+            <p className="text-gray-700">We strive to create cutting-edge solutions that push the limits of technology.</p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-cyan-500 transition transform hover:-translate-y-1 text-center">
-            <h3 className="text-xl font-semibold text-cyan-300 mb-2">Reliability</h3>
-            <p className="text-gray-300">Our services are dependable, secure, and designed to meet client expectations.</p>
+          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-[#E2B770]/50 transition transform hover:-translate-y-1 text-center">
+            <h3 className="text-xl font-semibold mb-2 text-[#E2B770]">Reliability</h3>
+            <p className="text-gray-700">Our services are dependable, secure, and designed to meet client expectations.</p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:shadow-cyan-500 transition transform hover:-translate-y-1 text-center">
-            <h3 className="text-xl font-semibold text-cyan-300 mb-2">Excellence</h3>
-            <p className="text-gray-300">We deliver high-quality solutions that make a real difference.</p>
+          <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-[#E2B770]/50 transition transform hover:-translate-y-1 text-center">
+            <h3 className="text-xl font-semibold mb-2 text-[#E2B770]">Excellence</h3>
+            <p className="text-gray-700">We deliver high-quality solutions that make a real difference.</p>
           </div>
         </div>
       </div>
 
       {/* Location with Google Map */}
       <div>
-        <h2 className="text-3xl font-bold text-cyan-400 mb-4 text-center">Our Location</h2>
-        <p className="text-center text-gray-300 mb-6">
+        <h2 className="text-3xl font-bold mb-4 text-center text-[#E2B770]">Our Location</h2>
+        <p className="text-center text-[#E2B770]/90 mb-6">
           Find us in Gisement, Sawa City, Kigali, Rwanda
         </p>
 

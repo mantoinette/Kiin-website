@@ -1,3 +1,4 @@
+// src/components/StatsSection.tsx
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { FaUsers, FaProjectDiagram, FaNetworkWired, FaLaptopCode } from "react-icons/fa";
@@ -13,8 +14,8 @@ const StatsSection = () => {
   ];
 
   return (
-    <div ref={ref} className="bg-gradient-to-r from-cyan-600 to-blue-700 py-20 text-white">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+    <div ref={ref} className="bg-[#F2F2F3] py-20">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center text-[#E2B770]">
         {stats.map((stat, index) => (
           <div key={index}>
             <div className="text-3xl mb-3 flex justify-center">{stat.icon}</div>
