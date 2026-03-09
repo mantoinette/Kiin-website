@@ -1,5 +1,5 @@
 // src/pages/ServicesPage.tsx
-import { FaWifi, FaCamera, FaNetworkWired, FaCode, FaUserGraduate } from "react-icons/fa";
+import { FaWifi, FaCamera, FaNetworkWired, FaCode, FaUserGraduate, FaShieldAlt, FaTools, FaHeadset } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import StatsSection from "../components/StatsSection";
 
@@ -14,93 +14,131 @@ const ServicesPage = () => {
     {
       title: "CCTV Camera Installation",
       description:
-        "Professional security camera installation for homes and businesses with remote monitoring.",
+        "Professional security camera installation with remote monitoring and smart alerts.",
       icon: <FaCamera />,
     },
     {
       title: "Access Point Setup",
       description:
-        "Reliable WiFi access point configuration to extend and strengthen your network coverage.",
+        "Reliable WiFi access point configuration to extend and strengthen network coverage.",
       icon: <FaNetworkWired />,
     },
     {
       title: "Software Development",
       description:
-        "Custom website and system development tailored to your business needs.",
+        "Custom websites, management systems, and digital platforms tailored to businesses.",
       icon: <FaCode />,
     },
     {
       title: "Internship Programs",
       description:
-        "Practical training opportunities for students to gain real-world IT experience.",
+        "Hands-on training programs helping students gain practical experience in IT.",
       icon: <FaUserGraduate />,
     },
   ];
 
-  return (
-    <div className="bg-[#1C1C1C] text-white">
+  const whyChooseUs = [
+    {
+      title: "Reliable Technology",
+      description: "We deliver modern and reliable solutions that keep your business connected.",
+      icon: <FaShieldAlt />,
+    },
+    {
+      title: "Professional Installation",
+      description: "Our experts ensure every installation is secure, efficient, and optimized.",
+      icon: <FaTools />,
+    },
+    {
+      title: "24/7 Support",
+      description: "We provide responsive support to ensure your systems run smoothly.",
+      icon: <FaHeadset />,
+    },
+  ];
 
-      {/* HERO SECTION */}
-      <div className="text-center py-20 px-6 bg-[#1C1C1C]">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+  return (
+    <div className="bg-gray-50 text-gray-800">
+
+      {/* HERO */}
+      <section className="text-center py-20 px-6 bg-white">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Our Professional Services
         </h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-white/80">
-          We deliver reliable internet solutions, advanced security systems,
-          professional software development, and real-world internship programs
-          to empower individuals and businesses.
+        <p className="max-w-3xl mx-auto text-lg text-gray-600">
+          We provide reliable internet connectivity, advanced security systems,
+          and modern software solutions designed to support homes, businesses,
+          and organizations.
         </p>
-      </div>
+      </section>
 
-      {/* SERVICES GRID */}
-      <div className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10">
+      {/* SERVICES */}
+      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-[#2A2A2A] p-8 rounded-2xl shadow-lg hover:shadow-white/50 transition duration-300 transform hover:-translate-y-2 text-center"
+            className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 text-center"
           >
-            <div className="text-white text-4xl mb-4 flex justify-center">
+            <div className="text-blue-600 text-4xl mb-4 flex justify-center">
               {service.icon}
             </div>
-            <h2 className="text-2xl font-bold mb-4">
-              {service.title}
-            </h2>
-            <p className="text-white/80">{service.description}</p>
+
+            <h2 className="text-xl font-bold mb-3">{service.title}</h2>
+
+            <p className="text-gray-600 text-sm">
+              {service.description}
+            </p>
           </div>
         ))}
-      </div>
+      </section>
 
-      {/* QUOTE SECTION */}
-      <div className="py-20 text-center px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Our Commitment
+      {/* WHY CHOOSE US */}
+      <section className="bg-white py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+          Why Choose Us
         </h2>
-        <p className="max-w-3xl mx-auto text-lg italic text-white/80">
-          "Technology is best when it connects people. We are committed to
-          delivering secure, reliable, and innovative solutions that help
-          our clients grow and succeed."
-        </p>
-      </div>
 
-      {/* STATISTICS SECTION */}
-      <StatsSection textColor="#E2B770" backgroundColor="#F2F2F3" />
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+          {whyChooseUs.map((item, index) => (
+            <div
+              key={index}
+              className="text-center p-8 bg-gray-50 rounded-xl shadow hover:shadow-lg transition"
+            >
+              <div className="text-blue-600 text-4xl mb-4 flex justify-center">
+                {item.icon}
+              </div>
 
-      {/* CALL TO ACTION */}
-      <div className="py-20 text-center px-6">
+              <h3 className="text-xl font-semibold mb-3">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-600 text-sm">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* STATS */}
+      <StatsSection textColor="#2563EB" backgroundColor="#F9FAFB" />
+
+      {/* CTA */}
+      <section className="text-center py-20 px-6 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Have a Question?
+          Need Our Services?
         </h2>
-        <p className="mb-8 text-lg text-white/80">
-          Need support? Want to install Starlink or CCTV? Looking for software development?
-          Contact us today and let’s build your solution.
+
+        <p className="text-gray-600 mb-8">
+          Contact us today for professional internet installation,
+          security systems, or custom software development.
         </p>
+
         <Link
           to="/contact"
-          className="inline-block bg-[#E2B770] hover:bg-[#d4a859] text-[#1C1C1C] px-8 py-3 rounded-full text-lg font-semibold transition transform hover:scale-105"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition"
         >
           Contact Us
         </Link>
-      </div>
+      </section>
 
     </div>
   );

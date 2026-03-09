@@ -1,12 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ServicesPage from "./pages/ServicesPage";
-// import Projects from "./pages/Projects";
+import StarlinkPage from "./services/StarlinkPage";
+import CCTVPage from "./services/CCTVPage";
+import NetworkingPage from "./services/NetworkingPage";
+import SoftwarePage from "./services/SoftwarePage";
 
 function App() {
   return (
@@ -24,6 +26,10 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             {/* <Route path="/projects" element={<Projects />} /> */}
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/services/starlink" element={<StarlinkPage />} />
+            <Route path="/services/cctv" element={<CCTVPage />} />
+            <Route path="/services/networking" element={<NetworkingPage />} />
+            <Route path="/services/software" element={<SoftwarePage />} />
           </Routes>
         </main>
 
