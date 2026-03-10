@@ -9,7 +9,7 @@ import StarlinkPage from "./services/StarlinkPage";
 import CCTVPage from "./services/CCTVPage";
 import NetworkingPage from "./services/NetworkingPage";
 import SoftwarePage from "./services/SoftwarePage";
-
+import CaseStudiesPage from "./pages/CaseStudiesPage";
 function App() {
   return (
     <Router>
@@ -30,6 +30,7 @@ function App() {
             <Route path="/services/cctv" element={<CCTVPage />} />
             <Route path="/services/networking" element={<NetworkingPage />} />
             <Route path="/services/software" element={<SoftwarePage />} />
+            <Route path="/case-studies" element={<CaseStudiesPage />} />
           </Routes>
         </main>
 

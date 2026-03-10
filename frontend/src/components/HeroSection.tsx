@@ -4,7 +4,12 @@ const images = [
   "/images/12.jpg",
   "/images/13.jpg",
   "/images/14.jpg",
-  
+   "/images/14.jpg",
+   "/images/15.jpg",
+    "/images/16.jpg",
+    "/images/17.jpg",
+    "/images/18.jpg",
+
 ];
 
 const HeroSection = () => {
