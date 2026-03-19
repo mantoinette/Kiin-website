@@ -10,6 +10,7 @@ import CCTVPage from "./services/CCTVPage";
 import NetworkingPage from "./services/NetworkingPage";
 import SoftwarePage from "./services/SoftwarePage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
+import AIChat from "./components/AIChat";
 function App() {
   return (
     <Router>
@@ -32,6 +33,7 @@ function App() {
             <Route path="/services/software" element={<SoftwarePage />} />
             <Route path="/case-studies" element={<CaseStudiesPage />} />
           </Routes>
+           <AIChat />
         </main>
 
         {/* Footer */}
